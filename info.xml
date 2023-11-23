@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <extension key="bankingdemo" type="module">
   <file>bankingdemo</file>
-  <name>bankingdemo</name>
-  <description>FIXME</description>
+  <name>CiviBanking Demo</name>
+  <description>Gives a little CiviBanking tour and demonstration</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>B. Endres</author>
@@ -14,7 +14,7 @@
     <url desc="Support">http://FIXME</url>
     <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
-  <releaseDate></releaseDate>
+  <releaseDate/>
   <version>0.1-dev</version>
   <develStage>dev</develStage>
   <compatibility>
@@ -26,7 +26,7 @@
     <psr4 prefix="Civi\" path="Civi"/>
   </classloader>
   <requires>
-    <ext>banking</ext>
+    <ext>org.project60.banking</ext>
   </requires>
   <civix>
     <namespace>CRM/Bankingdemo</namespace>
@@ -37,5 +37,6 @@
     <mixin>mgd-php@1.0.0</mixin>
     <mixin>setting-php@1.0.0</mixin>
     <mixin>smarty-v2@1.0.1</mixin>
+    <mixin>menu-xml@1.0.0</mixin>
   </mixins>
 </extension>
